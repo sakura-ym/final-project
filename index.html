@@ -1,0 +1,119 @@
+<html>
+<head>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="src/stylesheets.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="weather-container card background-Night">
+      <div class="clearfix">
+
+        
+        <form id="weather__form" class="float-left">
+          <input type="text" id="weather__form-location" placeholder="🔎 Search Your City" autocomplete="off" autofocus="on">
+          <input type="submit" value="Search!" class="btn btn-outline-info">
+
+        </form>
+        <button id="weather-refresh" class="btn btn-outline-info">Current Location</button>
+      </div>
+
+      <div class="weather-summary">
+        <div class="weather-summary-header">
+          <h1 id="weather-location"></h1>
+          <div id="weather-date" class="weather-detail__text">
+          </div>
+          <div class="weather-detail__text" id="weather-description"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="clearfix">
+              <img class="weather__icon weather__icon--today">
+              <div class="weather-temp weather-temp--today">
+
+              </div>
+              <div class="weather-unit__text weather-unit__text--today">
+                °C
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="weather-detail__text">
+              Humidity: <span id="precipitation-probality"></span>
+            </div>
+            <div class="weather-detail__text">
+              Feels like: <span id="feels-like"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="days clearfix">
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+        <div class="day__block">
+          <div class="day__block-date"></div>
+          <img class="day__block-image">
+          <div class="day__block-temps">
+            <span class="day__block-temp"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer><a href="https://github.com/matthieua/sup" target="_blank">Open-source code</a> by Sakura Y</footer>
+  </div>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
